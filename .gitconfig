@@ -1,0 +1,36 @@
+[user]
+    name  = zhenkunou
+    email = ryan.ouzhenkun@gmail.com
+[push]
+    default = simple
+[color]
+    ui = always
+[color "status"]
+    added     = green
+    changed   = red
+    untracked = magenta
+[color "diff"]
+    meta = yellow bold
+    frag = magenta
+    old  = red
+    new  = green
+[color "branch"]
+    current = green
+    local   = yellow
+    remote  = cyan
+[alias]
+    s   = status
+    ss  = status -s -b
+    df  = diff
+    dfn = diff --name-only
+    c   = commit -m
+    ca  = commit -am
+    aa  = add .
+    b   = branch
+    l   = log --oneline --decorate
+    ls  = log --oneline --graph --decorate
+    ll  = log --graph --decorate
+    w   = show
+[filter "media"]
+    clean = git-media-clean %f
+    smudge = git-media-smudge %f
