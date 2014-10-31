@@ -27,8 +27,8 @@
     ca  = commit -am
     aa  = add .
     b   = branch
-    l   = log --oneline --decorate
-    ls  = log --oneline --graph --decorate
+    l   = log --format='%C(auto)%h%Creset%C(auto)%d%Creset %s %C(dim bold cyan)<%an>%Creset %C(dim)%cr%Creset'
+    ls  = log --format='%C(auto)%h%Creset%C(auto)%d%Creset %s %C(dim bold cyan)<%an>%Creset %C(dim)%cr%Creset' --graph
     ll  = log --graph --decorate
     w   = show
 [filter "media"]
