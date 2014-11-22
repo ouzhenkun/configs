@@ -2,6 +2,13 @@
 // https://github.com/clowwindy/gfwlist2pac
 
 var domains = {
+  "godaddy.com":1,
+  "codepen.io":1,
+  "w3cschools.com":1,
+  "herokuapp.com":1,
+  "ingress.com":1,
+  "android.com":1,
+  "ionicframework.com":1,
   "fontcustom.com":1,
   "codeschool.com":1,
   "ggpht.com":1,
