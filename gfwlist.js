@@ -2,6 +2,8 @@
 // https://github.com/clowwindy/gfwlist2pac
 
 var domains = {
+  "plnkr.co":1,
+  "digitalocean.com":1,
   "godaddy.com":1,
   "codepen.io":1,
   "w3cschools.com":1,
