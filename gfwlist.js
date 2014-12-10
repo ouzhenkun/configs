@@ -2,6 +2,8 @@
 // https://github.com/clowwindy/gfwlist2pac
 
 var domains = {
+  "render.githubusercontent.com":1,
+  "amazonaws.com":1,
   "plnkr.co":1,
   "digitalocean.com":1,
   "godaddy.com":1,
@@ -2306,7 +2308,12 @@ var domains = {
   "dabr.mobi": 1,
   "catch22.net": 1,
   "digitalnomadsproject.org": 1,
+  "codeload.github.com": 1,
   "github.com": 1,
+  "github.io": 1,
+  "gitbook.com": 1,
+  "gitbook.io": 1,
+  "atom.io": 1,
   "blogspot.de": 1,
   "pcdvd.com.tw": 1,
   "getyouram.com": 1,

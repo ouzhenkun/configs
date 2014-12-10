@@ -1,0 +1,24 @@
+'.platform-darwin':
+  'cmd-|': 'tree-view:toggle'
+  'cmd-O': 'project-manager:toggle'
+  'cmd-o': 'fuzzy-finder:toggle-file-finder'
+
+'.platform-darwin .editor':
+  'ctrl-A' : 'atom-alignment:align'
+  'ctrl-.' : 'bookmarks:jump-to-next-bookmark'
+  'ctrl-,' : 'bookmarks:jump-to-previous-bookmark'
+  'ctrl-m' : 'bookmarks:toggle-bookmark'
+  'ctrl-m ctrl-l' : 'bookmarks:view-all'
+  'ctrl-m ctrl-u' : 'bookmarks:clear-bookmarks'
+
+'.platform-darwin .workspace':
+  'ctrl->': 'color-picker:open'
+
+'atom-workspace atom-text-editor:not([mini])':
+  'cmd-J': 'editor:add-selection-below'
+  'cmd-K': 'editor:add-selection-above'
+  'cmd-L': 'editor:split-selections-into-lines'
+
+'.editor.vim-mode:not(.insert-mode)':
+  'cmd-j': 'vim-mode:move-down'
+  'cmd-k': 'vim-mode:move-up'

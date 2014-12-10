@@ -1,0 +1,55 @@
+'global':
+  'exception-reporting':
+    'userId': '2a789008-d6df-6ba7-5730-7734af03465f'
+  'welcome':
+    'showOnStartup': false
+  'editor':
+    'showInvisibles': true
+    'invisibles':
+      'space': ' '
+    'showIndentGuide': true
+    'fontSize': 13
+  'core':
+    'disabledPackages': [
+      'language-c'
+      'language-clojure'
+      'language-gfm'
+      'language-make'
+      'language-mustache'
+      'language-php'
+      'language-toml'
+      'language-yaml'
+      'language-perl'
+      'autocomplete'
+      'notifications'
+      'autoflow'
+      'autosave'
+      'wrap-guide'
+    ]
+    'themes': [
+      'seti-ui'
+      'monokai'
+    ]
+    'projectHome': '/Users/zhenkunou/workspace'
+    'audioBeep': false
+  'coffeescript-preview':
+    'refreshDebouncePeriod': 500
+  'project-manager':
+    'sortBy': 'title'
+  'save-session':
+    'dataSaveFolder': '/Users/zhenkunou/.atom/packages/save-session/projects'
+    'project': '/Users/zhenkunou/workspace/maui'
+    'windowX': -1916
+    'windowY': -1001
+    'windowWidth': 1916
+    'windowHeight': 1080
+  'linter':
+    'showGutters': false
+    'statusBar': 'None'
+    'lintOnChange': false
+    'lintOnEditorFocus': false
+  'coffee-compile':
+    'compileOnSave': true
+  'tree-view':
+    'hideIgnoredNames': true
+    'hideVcsIgnoredFiles': true
