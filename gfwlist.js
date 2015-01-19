@@ -2,6 +2,8 @@
 // https://github.com/clowwindy/gfwlist2pac
 
 var domains = {
+  "killerstartups.com":1,
+  "evernote.com":1,
   "render.githubusercontent.com":1,
   "amazonaws.com":1,
   "plnkr.co":1,

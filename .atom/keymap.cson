@@ -1,18 +1,24 @@
 '.platform-darwin':
-  'cmd-|': 'tree-view:toggle'
-  'cmd-O': 'project-manager:toggle'
-  'cmd-o': 'fuzzy-finder:toggle-file-finder'
+  'cmd-`'  : 'tree-view:toggle'
+  'cmd-~'  : 'tree-view:toggle-focus'
+  'cmd-!'  : 'tree-view:reveal-active-file'
+  'ctrl-R' : 'tree-view:rename'
+  'cmd-O'  : 'project-manager:toggle'
+  'cmd-o'  : 'fuzzy-finder:toggle-file-finder'
+  'ctrl-p' : 'fuzzy-finder:toggle-file-finder'
 
 '.platform-darwin .editor':
+  'ctrl-R' : 'tree-view:rename'
   'ctrl-A' : 'atom-alignment:align'
   'ctrl-.' : 'bookmarks:jump-to-next-bookmark'
   'ctrl-,' : 'bookmarks:jump-to-previous-bookmark'
   'ctrl-m' : 'bookmarks:toggle-bookmark'
-  'ctrl-m ctrl-l' : 'bookmarks:view-all'
-  'ctrl-m ctrl-u' : 'bookmarks:clear-bookmarks'
+  'ctrl-m ctrl-a' : 'bookmarks:view-all'
+  'ctrl-m ctrl-c' : 'bookmarks:clear-bookmarks'
 
-'.platform-darwin .workspace':
-  'ctrl->': 'color-picker:open'
+'.platform-darwin .editor:not(.mini)':
+  'ctrl-shift-cmd-J' : 'emmet:split-join-tag'
+  'cmd-J'            : 'editor:add-selection-below'
 
 'atom-workspace atom-text-editor:not([mini])':
   'cmd-J': 'editor:add-selection-below'
@@ -22,3 +28,14 @@
 '.editor.vim-mode:not(.insert-mode)':
   'cmd-j': 'vim-mode:move-down'
   'cmd-k': 'vim-mode:move-up'
+  'shift-H': 'pane:show-previous-item'
+  'shift-L': 'pane:show-next-item'
+
+'body':
+  'alt-P': 'core:select-to-top'
+  'alt-N': 'core:select-to-bottom'
+  'ctrl-h': 'vim-mode:focus-pane-view-on-left'
+  'ctrl-l': 'vim-mode:focus-pane-view-on-right'
+
+'.platform-darwin .pane .editor:not(.mini)':
+  'cmd-/': 'editor:toggle-line-comments'

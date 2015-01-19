@@ -1,14 +1,13 @@
-'global':
+'*':
   'exception-reporting':
     'userId': '2a789008-d6df-6ba7-5730-7734af03465f'
   'welcome':
     'showOnStartup': false
   'editor':
-    'showInvisibles': true
+    'fontSize': 13
+    'showIndentGuide': true
     'invisibles':
       'space': ' '
-    'showIndentGuide': true
-    'fontSize': 13
   'core':
     'disabledPackages': [
       'language-c'
@@ -25,6 +24,8 @@
       'autoflow'
       'autosave'
       'wrap-guide'
+      'minimap-find-and-replace'
+      'coffee-compile'
     ]
     'themes': [
       'seti-ui'
@@ -37,19 +38,30 @@
   'project-manager':
     'sortBy': 'title'
   'save-session':
-    'dataSaveFolder': '/Users/zhenkunou/.atom/packages/save-session/projects'
-    'project': '/Users/zhenkunou/workspace/maui'
-    'windowX': -1916
-    'windowY': -1001
-    'windowWidth': 1916
-    'windowHeight': 1080
+    'project': '/Users/zhenkunou/workspace/budweiser'
+    'windowX': 0
+    'windowY': 23
+    'windowWidth': 1280
+    'windowHeight': 777
+    'treeSize': 353
   'linter':
-    'showGutters': false
-    'statusBar': 'None'
     'lintOnChange': false
     'lintOnEditorFocus': false
+    'showHighlighting': false
+    'showErrorInline': true
+    'statusBar': 'None'
   'coffee-compile':
     'compileOnSave': true
   'tree-view':
     'hideIgnoredNames': true
-    'hideVcsIgnoredFiles': true
+  'project-palette-finder':
+    'paletteSort': true
+  'find-and-replace':
+    'openProjectFindResultsInRightPane': true
+  'autocomplete-plus':
+    'autoActivationDelay': 30
+  'vim-mode':
+    'useSmartcaseForSearch': true
+  'minimap':
+    'plugins':
+      'git-diff': true

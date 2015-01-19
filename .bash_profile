@@ -10,5 +10,6 @@ export PS1='\u@\h:\w\[\033[1;32m\]$(git_branch)\[\033[0m\]$ '
 export CLICOLOR=1
 export GREP_OPTIONS="--color=auto"
 alias ll="ls -l"c
+alias vim="stty stop '' -ixoff; vim"
 ulimit -S -n 2048
 stty start undef
