@@ -37,12 +37,12 @@ let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 
 " Keep search matches in the middle of the window
-nnoremap n nzzzv
-nnoremap N Nzzzv
-nnoremap * *zzzv
-nnoremap # #zzzv
-nnoremap g* g*zzzv
-nnoremap g# g#zzzv
+nmap n nzzzv
+nmap N Nzzzv
+nmap * *zzzv
+nmap # #zzzv
+nmap g* g*zzzv
+nmap g# g#zzzv
 
 " Remove search highlight
 map <C-C> <C-C>:noh<CR>
@@ -59,9 +59,8 @@ vmap <C-S> <C-C>:update<CR>
 imap <C-S> <C-C>:update<CR>
 
 " Tab control
-nmap <C-]> :tabn<CR>
-nmap <C-[> :tabp<CR>
-nmap <C-T> :tabnew<CR>
+nmap <Leader><S-L> :tabn<CR>
+nmap <Leader><S-H> :tabp<CR>
 nmap <Leader>1 :tabn1<CR>
 nmap <Leader>2 :tabn2<CR>
 nmap <Leader>3 :tabn3<CR>
@@ -71,7 +70,8 @@ nmap <Leader>6 :tabn6<CR>
 nmap <Leader>7 :tabn7<CR>
 nmap <Leader>8 :tabn8<CR>
 nmap <Leader>9 :tabn9<CR>
-nmap <C-Q> :q<CR>
+nmap <C-T> :tabnew<CR>
+nmap <C-Q> :q
 
 
 syntax on                 " Syntax highlighting
@@ -87,8 +87,8 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 Plugin 'tomasr/molokai'
-color molokai
 let g:molokai_original = 1
+color molokai
 hi CursorLine ctermbg=236                 cterm=none
 hi Visual     ctermbg=236
 hi Search     ctermfg=222   ctermbg=240   cterm=none
@@ -135,6 +135,8 @@ Plugin 'Yggdroot/indentLine'
 
 "Plugin 'mhinz/vim-startify'
 
+Plugin 'myusuf3/numbers.vim'
+
 Plugin 'Lokaltog/vim-easymotion'
 
 Plugin 'zhenkunou/vim-tabline'
@@ -148,13 +150,13 @@ Plugin 'Shougo/neocomplcache.vim'
 let g:neocomplcache_enable_at_startup = 1
 let g:neocomplcache_enable_auto_delimiter=1
 let g:neocomplcache_enable_fuzzy_completion=1
-inoremap <expr> <Tab>   pumvisible() ? "\<C-N>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-P>" : "\<S-Tab>"
-inoremap <expr> <CR>    pumvisible() ? "\<C-Y>" : "\<CR>"
-inoremap <expr> <C-B>   neocomplcache#cancel_popup()
-highlight Pmenu     ctermfg=LightGray ctermbg=DarkGray
-highlight PmenuSel  ctermfg=White     ctermbg=DarkBlue
-highlight PmenuSbar ctermbg=DarkGray
+imap <expr> <Tab>   pumvisible() ? "\<C-N>" : "\<Tab>"
+imap <expr> <S-Tab> pumvisible() ? "\<C-P>" : "\<S-Tab>"
+imap <expr> <CR>    pumvisible() ? "\<C-Y>" : "\<CR>"
+imap <expr> <C-B>   neocomplcache#cancel_popup()
+hi Pmenu     ctermfg=LightGray ctermbg=DarkGray
+hi PmenuSel  ctermfg=White     ctermbg=DarkBlue
+hi PmenuSbar ctermbg=DarkGray
 
 Plugin 'terryma/vim-multiple-cursors'
 let g:multi_cursor_next_key='<C-n>'
@@ -163,6 +165,7 @@ let g:multi_cursor_skip_key='<C-x>'
 let g:multi_cursor_quit_key='<C-c>'
 
 Plugin 'kien/ctrlp.vim'
+let g:ctrlp_show_hidden = 1
 set wildignore+=*/tmp/*,*/node_modules/*,*/platforms/*,*.jar,*.zip,*.so,*.swp,*.class,*.map
 
 Plugin 'scrooloose/nerdtree'
