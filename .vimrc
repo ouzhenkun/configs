@@ -20,8 +20,8 @@ set clipboard=unnamed           " Use OS clipboard for copypasta
 set backspace=indent,eol,start  " Backspace for dummies
 
 " Show ALL white spaces as a character
-+set list
-+set listchars=tab:»●,trail:●
+set list
+set listchars=tab:»●,trail:●
 
 " No sound on errors
 set noerrorbells
