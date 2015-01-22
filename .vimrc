@@ -172,7 +172,8 @@ let g:multi_cursor_quit_key='<C-c>'
 
 Plugin 'kien/ctrlp.vim'
 let g:ctrlp_show_hidden = 1
-set wildignore+=*/tmp/*,*/node_modules/*,*/platforms/*,*.jar,*.zip,*.so,*.swp,*.class,*.map
+let g:ctrlp_clear_cache_on_exit = 0
+set wildignore+=*/tmp/*,*/.tmp/*,*/dist/*,*/.idea/*,*/.live-archive/*,*/.DS_Store/*,*/node_modules/*,*/platforms/*,*.jar,*.zip,*.so,*.swp,*.class,*.map
 
 Plugin 'scrooloose/nerdtree'
 map <C-E> :NERDTreeToggle<CR>
