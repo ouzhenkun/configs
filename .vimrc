@@ -19,6 +19,10 @@ set showtabline=2               " Display tab bar all the time
 set clipboard=unnamed           " Use OS clipboard for copypasta
 set backspace=indent,eol,start  " Backspace for dummies
 
+" Show ALL white spaces as a character
++set list
++set listchars=tab:»●,trail:●
+
 " No sound on errors
 set noerrorbells
 set novisualbell
@@ -133,6 +137,7 @@ nmap <Leader>j <Plug>GitGutterNextHunk
 nmap <Leader>k <Plug>GitGutterPrevHunk
 
 Plugin 'Yggdroot/indentLine'
+let g:indentLine_char = '┊'
 
 "Plugin 'mhinz/vim-startify'
 
