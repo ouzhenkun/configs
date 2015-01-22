@@ -15,6 +15,7 @@ set incsearch                   " Find as you type search
 set ignorecase                  " Case insensitive search
 set history=100                 " Number of things to remember in history.
 set laststatus=2                " Always display the status line
+set showtabline=2               " Display tab bar all the time
 set clipboard=unnamed           " Use OS clipboard for copypasta
 set backspace=indent,eol,start  " Backspace for dummies
 
@@ -50,8 +51,8 @@ map <C-C> <C-C>:noh<CR>
 " Navigation between windows
 map <C-J> <C-W>j<C-W>_
 map <C-K> <C-W>k<C-W>_
-map <C-L> <C-W>l<C-W>_
-map <C-H> <C-W>h<C-W>_
+map <C-L> <C-W>l
+map <C-H> <C-W>h
 
 " Use CTRL-S for saving, also in Insert mode
 nmap <C-S> :update<CR>
@@ -59,8 +60,8 @@ vmap <C-S> <C-C>:update<CR>
 imap <C-S> <C-C>:update<CR>
 
 " Tab control
-nmap <Leader><S-L> :tabn<CR>
-nmap <Leader><S-H> :tabp<CR>
+nmap <S-L> :tabn<CR>
+nmap <S-H> :tabp<CR>
 nmap <Leader>1 :tabn1<CR>
 nmap <Leader>2 :tabn2<CR>
 nmap <Leader>3 :tabn3<CR>
