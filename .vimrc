@@ -92,7 +92,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 Plugin 'tomasr/molokai'
-let g:molokai_original = 1
+let g:molokai_original = 0
 color molokai
 hi CursorLine ctermbg=236                 cterm=none
 hi Visual     ctermbg=236
@@ -140,8 +140,6 @@ Plugin 'Yggdroot/indentLine'
 let g:indentLine_char = '┊'
 
 "Plugin 'mhinz/vim-startify'
-
-Plugin 'myusuf3/numbers.vim'
 
 Plugin 'Lokaltog/vim-easymotion'
 
