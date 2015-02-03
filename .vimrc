@@ -59,6 +59,7 @@ map <C-L> <C-W>l
 map <C-H> <C-W>h
 
 " Use CTRL-S for saving, also in Insert mode
+" Please add this line to your .bash_profile: alias vim="stty stop '' -ixoff; vim"
 nmap <C-S> :update<CR>
 vmap <C-S> <C-C>:update<CR>
 imap <C-S> <C-C>:update<CR>
@@ -79,25 +80,17 @@ nmap <C-T> :tabnew<CR>
 nmap <C-Q> :q
 
 
-syntax on                 " Syntax highlighting
-filetype plugin indent on " Automatically detect file types
-execute pathogen#infect()
 "
 " Vundle
 " https://github.com/gmarik/vundle
 "
+filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call vundle#rc()
 
 Plugin 'gmarik/Vundle.vim'
 
 Plugin 'tomasr/molokai'
-let g:molokai_original = 0
-color molokai
-hi CursorLine ctermbg=236                 cterm=none
-hi Visual     ctermbg=236
-hi Search     ctermfg=222   ctermbg=240   cterm=none
-hi MatchParen ctermfg=none  ctermbg=none  cterm=underline
 
 Plugin 'kchmck/vim-coffee-script'
 
@@ -133,22 +126,27 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-fugitive'
 
 Plugin 'airblade/vim-gitgutter'
+let g:gitgutter_max_signs=10000
 nmap <Leader>j <Plug>GitGutterNextHunk
 nmap <Leader>k <Plug>GitGutterPrevHunk
 
 Plugin 'Yggdroot/indentLine'
 let g:indentLine_char = '┊'
 
-"Plugin 'mhinz/vim-startify'
+Plugin 'mhinz/vim-startify'
+set viminfo='100,n$HOME/.vim/viminfo
 
 Plugin 'Lokaltog/vim-easymotion'
 
+Plugin 'mattn/webapi-vim'
+
+Plugin 'mattn/gist-vim'
+let g:gist_post_private = 1
+
 Plugin 'zhenkunou/vim-tabline'
-hi TabLine      ctermfg=LightGray  ctermbg=DarkGray    cterm=NONE
-hi TabLineSel   ctermfg=White      ctermbg=DarkBlue    cterm=NONE
-hi TabLineFill  ctermfg=Black      ctermbg=DarkGray    cterm=NONE
 
 Plugin 'mileszs/ack.vim'
+let g:ackhighlight = 1
 
 Plugin 'Shougo/neocomplcache.vim'
 let g:neocomplcache_enable_at_startup = 1
@@ -158,9 +156,6 @@ imap <expr> <Tab>   pumvisible() ? "\<C-N>" : "\<Tab>"
 imap <expr> <S-Tab> pumvisible() ? "\<C-P>" : "\<S-Tab>"
 imap <expr> <CR>    pumvisible() ? "\<C-Y>" : "\<CR>"
 imap <expr> <C-B>   neocomplcache#cancel_popup()
-hi Pmenu     ctermfg=LightGray ctermbg=DarkGray
-hi PmenuSel  ctermfg=White     ctermbg=DarkBlue
-hi PmenuSbar ctermbg=DarkGray
 
 Plugin 'terryma/vim-multiple-cursors'
 let g:multi_cursor_next_key='<C-n>'
@@ -176,7 +171,21 @@ set wildignore+=*/tmp/*,*/.tmp/*,*/dist/*,*/.idea/*,*/.live-archive/*,*/.DS_Stor
 Plugin 'scrooloose/nerdtree'
 map <C-E> :NERDTreeToggle<CR>
 
-call vundle#end()
+syntax on                 " Syntax highlighting
+filetype plugin indent on " Automatically detect file types
 "
 " Vundle End
 "
+
+color molokai
+hi CursorLine  ctermbg=236                            cterm=none
+hi Visual      ctermbg=236
+hi Search      ctermfg=222        ctermbg=240         cterm=none
+hi MatchParen  ctermfg=none       ctermbg=none        cterm=underline
+hi Pmenu       ctermfg=LightGray  ctermbg=DarkGray
+hi PmenuSel    ctermfg=White      ctermbg=DarkBlue
+hi PmenuSbar   ctermbg=DarkGray
+hi TabLine     ctermfg=LightGray  ctermbg=DarkGray    cterm=NONE
+hi TabLineSel  ctermfg=White      ctermbg=DarkBlue    cterm=NONE
+hi TabLineFill ctermfg=Black      ctermbg=DarkGray    cterm=NONE
+
