@@ -4,6 +4,15 @@
 var proxy = "SOCKS5 127.0.0.1:1080; SOCKS 127.0.0.1:1080; DIRECT;";
 
 var rules = [
+  "pushbullet.com",
+  "abetobing.com",
+  "xda-developers.com",
+  "v2ex.com",
+  "feedly.com",
+  "jsfiddle.net",
+  "github.io",
+  "vimcasts.org",
+  "plnkr.co",
   "amazonaws.com",
   "ytvpn.com",
   "github.com",
