@@ -1,4 +1,4 @@
 configs
 =======
 
-My common configs for Mac/Linux
+My common configs for Mac
