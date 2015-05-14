@@ -2,5 +2,5 @@
 .DS_store
 .note
 .live-archive
-.node_modules
+node_modules
 
