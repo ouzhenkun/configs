@@ -17,3 +17,13 @@ alias cnpm="npm --registry=https://registry.npm.taobao.org \
 --disturl=https://npm.taobao.org/dist \
 --userconfig=$HOME/.cnpmrc"
 alias vim="stty stop '' -ixoff; vim"
+
+alias dnsmasq-start="sudo launchctl start homebrew.mxcl.dnsmasq"
+alias dnsmasq-stop="sudo launchctl stop homebrew.mxcl.dnsmasq"
+alias dnsmasq-config="vim /usr/local/etc/dnsmasq.conf"
+alias dnsmasq-log="sudo tail -f /var/log/dnsmasq.log"
+alias nginx-stop="sudo nginx -s stop"
+alias nginx-reload="sudo nginx -s reload"
+alias nginx-start="sudo nginx"
+alias nginx-config="vim /usr/local/etc/nginx/nginx.conf"
+alias hosts-config="sudo vim /etc/hosts"

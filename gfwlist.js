@@ -4,6 +4,12 @@
 var proxy = "SOCKS5 127.0.0.1:1080; SOCKS 127.0.0.1:1080; DIRECT;";
 
 var rules = [
+  "eslint.org",
+  "getmdl.io",
+  "icloud.com",
+  "evernote.com",
+  "githubusercontent.com",
+  "react.rocks",
   "chaijs.com",
   "iamued.com",
   "ticktick.com",
