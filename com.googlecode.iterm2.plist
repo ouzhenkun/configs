@@ -159,9 +159,9 @@
 	<key>Hotkey</key>
 	<true/>
 	<key>HotkeyChar</key>
-	<integer>96</integer>
+	<integer>52</integer>
 	<key>HotkeyCode</key>
-	<integer>50</integer>
+	<integer>21</integer>
 	<key>HotkeyModifiers</key>
 	<integer>524576</integer>
 	<key>IRMemory</key>
@@ -209,7 +209,7 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1306 289 445 77 0 0 1920 1057 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>241 450 924 485 0 0 1920 1080 </string>
+	<string>86 518 924 485 0 0 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>44 292 650 476 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
@@ -1013,7 +1013,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-08-02T06:10:37Z</date>
+	<date>2015-08-12T12:59:27Z</date>
 	<key>SUSkippedVersion</key>
 	<string>2.1.1</string>
 	<key>SavePasteHistory</key>
