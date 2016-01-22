@@ -1,67 +1,76 @@
-'*':
-  'exception-reporting':
-    'userId': '2a789008-d6df-6ba7-5730-7734af03465f'
-  'welcome':
-    'showOnStartup': false
-  'editor':
-    'fontSize': 13
-    'showIndentGuide': true
-    'invisibles':
-      'space': ' '
-  'core':
-    'disabledPackages': [
-      'language-c'
-      'language-clojure'
-      'language-gfm'
-      'language-make'
-      'language-mustache'
-      'language-php'
-      'language-toml'
-      'language-yaml'
-      'language-perl'
-      'autocomplete'
-      'notifications'
-      'autoflow'
-      'autosave'
-      'wrap-guide'
-      'minimap-find-and-replace'
-      'coffee-compile'
+"*":
+  "autocomplete-plus":
+    autoActivationDelay: 30
+  "coffee-compile":
+    compileOnSave: true
+  "coffeescript-preview":
+    refreshDebouncePeriod: 500
+  core:
+    audioBeep: false
+    disabledPackages: [
+      "language-c"
+      "language-clojure"
+      "language-gfm"
+      "language-make"
+      "language-mustache"
+      "language-php"
+      "language-toml"
+      "language-yaml"
+      "language-perl"
+      "notifications"
+      "autoflow"
+      "autosave"
+      "wrap-guide"
+      "minimap-find-and-replace"
+      "coffee-compile"
     ]
-    'themes': [
-      'seti-ui'
-      'monokai'
+    packagesWithKeymapsDisabled: [
+      "angularjs"
     ]
-    'projectHome': '/Users/zhenkunou/workspace'
-    'audioBeep': false
-  'coffeescript-preview':
-    'refreshDebouncePeriod': 500
-  'project-manager':
-    'sortBy': 'title'
-  'save-session':
-    'project': '/Users/zhenkunou/workspace/budweiser'
-    'windowX': 0
-    'windowY': 23
-    'windowWidth': 1280
-    'windowHeight': 777
-    'treeSize': 353
-  'linter':
-    'lintOnChange': false
-    'lintOnEditorFocus': false
-    'showHighlighting': false
-    'showErrorInline': true
-    'statusBar': 'None'
-  'coffee-compile':
-    'compileOnSave': true
-  'tree-view':
-    'hideIgnoredNames': true
-  'project-palette-finder':
-    'paletteSort': true
-  'find-and-replace':
-    'openProjectFindResultsInRightPane': true
-  'autocomplete-plus':
-    'autoActivationDelay': 30
-  'vim-mode':
-    'useSmartcaseForSearch': true
-  'minimap':
-    'plugins':
-      'git-diff': true
+    projectHome: "/Users/zhenkunou/workspace"
+    themes: [
+      "atom-dark-ui"
+      "monokai"
+    ]
+  "dark-flat-ui":
+    accentColor: "blue"
+    coloredTabs: false
+  editor:
+    fontSize: 13
+    invisibles:
+      space: " "
+    showIndentGuide: true
+  emmet: {}
+  "exception-reporting":
+    userId: "2a789008-d6df-6ba7-5730-7734af03465f"
+  "find-and-replace":
+    openProjectFindResultsInRightPane: true
+  "fuzzy-finder": {}
+  linter:
+    lintOnChange: false
+    lintOnEditorFocus: false
+    showErrorInline: true
+    showHighlighting: false
+    statusBar: "None"
+  minimap:
+    plugins:
+      "git-diff": true
+  "one-dark-ui": {}
+  "project-manager":
+    sortBy: "title"
+  "project-palette-finder":
+    paletteSort: true
+  "save-session":
+    dataSaveFolder: "/Users/zhenkunou/.atom/packages/save-session/projects"
+    project: "/Users/zhenkunou/workspace/budweiser"
+    treeSize: 353
+    windowHeight: 777
+    windowWidth: 1280
+    windowX: 0
+    windowY: 23
+  "tree-view":
+    hideIgnoredNames: true
+  "vim-mode":
+    useSmartcaseForSearch: true
+  welcome:
+    showOnStartup: false
