@@ -176,8 +176,16 @@
 	<true/>
 	<key>MaxVertically</key>
 	<false/>
+	<key>NSColorPanelMode</key>
+	<string>0</string>
+	<key>NSColorPickerSlidersDefaults</key>
+	<string>0</string>
+	<key>NSFontPanelAttributes</key>
+	<string>1, 0</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/configs</string>
+	<string>~</string>
+	<key>NSNavPanelExpandedSizeForOpenMode</key>
+	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -207,11 +215,11 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>1306 289 445 77 0 0 1920 1057 </string>
+	<string>765 334 445 82 0 0 1280 800 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>86 518 924 485 0 0 1920 1080 </string>
+	<string>190 572 924 485 0 0 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>44 292 650 476 0 0 1920 1057 </string>
+	<string>44 279 650 498 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>44 6 1234 764 0 0 1280 777 </string>
 	<key>NeverWarnAboutShortLivedSessions_2ACC8DA1-D4FB-402D-9723-A047787AC844</key>
@@ -345,11 +353,11 @@
 			<key>Ansi 7 Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.73333334922790527</real>
+				<real>0.28925439715385437</real>
 				<key>Green Component</key>
-				<real>0.73333334922790527</real>
+				<real>0.28925439715385437</real>
 				<key>Red Component</key>
-				<real>0.73333334922790527</real>
+				<real>0.28925439715385437</real>
 			</dict>
 			<key>Ansi 8 Color</key>
 			<dict>
@@ -461,7 +469,7 @@
 			<key>Hide After Opening</key>
 			<false/>
 			<key>Horizontal Spacing</key>
-			<real>1</real>
+			<real>0.89999997615814209</real>
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Initial Text</key>
@@ -936,7 +944,7 @@
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Vertical Spacing</key>
-			<real>1</real>
+			<real>1.0300754308700562</real>
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
@@ -1013,9 +1021,9 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-08-12T12:59:27Z</date>
+	<date>2016-02-04T07:38:55Z</date>
 	<key>SUSkippedVersion</key>
-	<string>2.1.1</string>
+	<string>2.1.4</string>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
