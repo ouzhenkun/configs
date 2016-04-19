@@ -137,7 +137,7 @@
     "quote-props": 0,
     "quotes": [2, "single", "avoid-escape"],
     "semi-spacing": [2, {"before": false, "after": true}],
-    "semi": [2, "always"],
+    "semi": [0, "always"],
     "space-before-keywords": 1,
     "space-after-keywords": 1,
     "space-before-blocks": 1,
