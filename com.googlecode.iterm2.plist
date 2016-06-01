@@ -217,11 +217,11 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>765 334 445 82 0 0 1280 800 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>190 572 924 485 0 0 1920 1080 </string>
+	<string>253 410 924 485 0 0 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>44 279 650 498 0 0 1280 777 </string>
+	<string>-1798 -1035 1879 1057 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>44 6 1234 764 0 0 1280 777 </string>
+	<string>-569 -479 650 501 0 0 1920 1057 </string>
 	<key>NeverWarnAboutShortLivedSessions_2ACC8DA1-D4FB-402D-9723-A047787AC844</key>
 	<true/>
 	<key>New Bookmarks</key>
@@ -401,7 +401,7 @@
 			<key>Blinking Cursor</key>
 			<false/>
 			<key>Blur</key>
-			<false/>
+			<true/>
 			<key>Blur Radius</key>
 			<real>6.2619543075561523</real>
 			<key>Bold Color</key>
@@ -930,7 +930,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.0</real>
+			<real>0.10923399776220322</real>
 			<key>Triggers</key>
 			<array/>
 			<key>Unlimited Scrollback</key>
@@ -1021,7 +1021,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-02-04T07:38:55Z</date>
+	<date>2016-05-06T02:33:00Z</date>
 	<key>SUSkippedVersion</key>
 	<string>2.1.4</string>
 	<key>SavePasteHistory</key>
@@ -1037,9 +1037,9 @@
 	<key>SplitPaneDimmingAmount</key>
 	<real>0.40000000596046448</real>
 	<key>SwitchTabModifier</key>
-	<integer>4</integer>
-	<key>SwitchWindowModifier</key>
 	<integer>6</integer>
+	<key>SwitchWindowModifier</key>
+	<integer>4</integer>
 	<key>TabViewType</key>
 	<integer>0</integer>
 	<key>ThreeFingerEmulates</key>
