@@ -15,19 +15,19 @@
       "language-mustache"
       "language-php"
       "language-toml"
-      "language-yaml"
       "language-perl"
-      "notifications"
       "autoflow"
       "autosave"
       "wrap-guide"
       "minimap-find-and-replace"
       "coffee-compile"
+      "language-yaml"
     ]
     packagesWithKeymapsDisabled: [
       "angularjs"
     ]
     projectHome: "/Users/zhenkunou/workspace"
+    telemetryConsent: "no"
     themes: [
       "atom-dark-ui"
       "monokai"
@@ -44,17 +44,19 @@
   "exception-reporting":
     userId: "2a789008-d6df-6ba7-5730-7734af03465f"
   "find-and-replace":
-    openProjectFindResultsInRightPane: true
+    projectSearchResultsPaneSplitDirection: "right"
   "fuzzy-finder": {}
   linter:
     lintOnChange: false
     lintOnEditorFocus: false
-    showErrorInline: true
     showHighlighting: false
     statusBar: "None"
   minimap:
     plugins:
       "git-diff": true
+      "git-diffDecorationsZIndex": 0
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
   "one-dark-ui": {}
   "project-manager":
     sortBy: "title"
@@ -68,6 +70,7 @@
     windowWidth: 1280
     windowX: 0
     windowY: 23
+  tabs: {}
   "tree-view":
     hideIgnoredNames: true
   "vim-mode":

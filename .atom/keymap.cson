@@ -1,9 +1,8 @@
 '.platform-darwin':
-  'ctrl-e'  : 'tree-view:toggle'
+  'ctrl-e' : 'tree-view:toggle'
   'cmd-ctrl-e'  : 'tree-view:toggle-focus'
   'cmd-!'  : 'tree-view:reveal-active-file'
   'ctrl-R' : 'tree-view:rename'
-  'cmd-o'  : 'project-manager:toggle'
 '.platform-darwin .editor':
   'ctrl-R' : 'tree-view:rename'
   'ctrl-A' : 'atom-alignment:align'
@@ -20,23 +19,22 @@
   'cmd-K': 'editor:add-selection-above'
   'cmd-L': 'editor:split-selections-into-lines'
 'body':
-  'alt-P': 'core:select-to-top'
-  'alt-N': 'core:select-to-bottom'
   'ctrl-h': 'window:focus-pane-on-left'
   'ctrl-l': 'window:focus-pane-on-right'
   'ctrl-k': 'window:focus-pane-above'
   'ctrl-j': 'window:focus-pane-below'
-  'ctrl-s': 'core:save'
+  'ctrl-p': 'fuzzy-finder:toggle-file-finder'
 '.platform-darwin .pane .editor:not(.mini)':
   'cmd-/': 'editor:toggle-line-comments'
 'atom-text-editor':
   'ctrl-k': 'unset!'
+  'ctrl-e': 'unset!'
 'atom-text-editor.vim-mode:not(.insert-mode)':
   'cmd-j': 'vim-mode:move-down'
   'cmd-k': 'vim-mode:move-up'
-  'ctrl-e': 'unset!'
 '.tree-view':
   'o': 'tree-view:open-selected-entry'
+  'ctrl-l' : 'tree-view:toggle-focus'
 '.fuzzy-finder atom-text-editor[mini]':
   'ctrl-v': 'pane:split-right'
   'ctrl-s': 'pane:split-down'

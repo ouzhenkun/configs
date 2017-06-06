@@ -6,6 +6,8 @@
 var proxy = "SOCKS5 127.0.0.1:1080; SOCKS 127.0.0.1:1080; DIRECT;";
 
 var rules = [
+  "lorempixel.com",
+  "componentkit.org",
   "app.pluralsight.com",
   "codepen.io",
   "eslint.org",
@@ -33,7 +35,6 @@ var rules = [
   "github.io",
   "vimcasts.org",
   "plnkr.co",
-  "amazonaws.com",
   "ytvpn.com",
   "github.com",
   ".lsxszzg.com",

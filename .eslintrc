@@ -39,7 +39,7 @@
     "curly": [0, "all"],
     "default-case": 1,
     "dot-location": [2, "property"],
-    "dot-notation": 2,
+    "dot-notation": 0,
     "eqeqeq": 1,
     "guard-for-in": 0,
     "no-alert": 2,
@@ -100,7 +100,7 @@
     "no-undef-init": 2,
     "no-undefined": 0,
     "no-unused-vars": [1, { "varsIgnorePattern": "debug" }],
-    "no-use-before-define": 2,
+    "no-use-before-define": 1,
 
     // Stylistic Issues
     "object-curly-spacing": [1, "always", {"arraysInObjects": true, "objectsInObjects": false}],
@@ -135,7 +135,7 @@
     "no-spaced-func": 2,
     "no-unneeded-ternary": 2,
     "quote-props": 0,
-    "quotes": [2, "single", "avoid-escape"],
+    "quotes": [1, "single", "avoid-escape"],
     "semi-spacing": [2, {"before": false, "after": true}],
     "semi": [0, "always"],
     "space-before-keywords": 1,
