@@ -60,7 +60,14 @@ plugins=(git git-flow nvm zsh-autosuggestions npm)
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/zhenkunou/android/sdk/platform-tools:/Users/zhenkunou/android/sdk/tools"
+export PUB_HOSTED_URL=https://pub.flutter-io.cn
+export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
+
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/zhenkunou/tools/flutter/bin"
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home"
+export ANDROID_HOME="/Users/zhenkunou/Library/Android/sdk"
+export PATH=${PATH}:${ANDROID_HOME}/tools
+export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -91,6 +98,7 @@ alias zshconfig="vim ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # ctrl-s saving
 alias vim="stty stop '' -ixoff; vim"
+
 # helpers
 alias cnpm="npm --registry=https://registry.npm.taobao.org \
 --cache=$HOME/.npm/.cache/cnpm \
@@ -111,5 +119,8 @@ alias hosts-config="sudo vim /etc/hosts"
 
 set -o ignoreeof
 
-export NVM_DIR="/Users/zhenkunou/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+alias proxy_on='export all_proxy=socks5://127.0.0.1:1087'
+alias proxy_off='unset all_proxy'
+
+# npm config set registry https://registry.npm.taobao.org --global
+# npm config set disturl https://npm.taobao.org/dist --global
