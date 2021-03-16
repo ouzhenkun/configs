@@ -1,24 +1,19 @@
 /* VSCode自定义样式 */
 
 /* 隐藏编辑器右上角的菜单 */
-.editor-actions .codicon-compare-changes,
-.editor-actions .menu-item-action-item-icon-1,
-.editor-actions .menu-item-action-item-icon-2,
-.editor-actions .menu-item-action-item-icon-3,
-.editor-actions .menu-item-action-item-icon-4,
-.editor-actions .menu-item-action-item-icon-5,
-.editor-actions .menu-item-action-item-icon-6,
-.editor-actions .menu-item-action-item-icon-7,
-.editor-actions .menu-item-action-item-icon-8,
-.editor-actions .codicon-split-horizontal,
-.editor-actions .monaco-dropdown
+.editor-actions a[title^='Open Changes'],
+.editor-actions a[title^='Run Code'],
+.editor-actions a[title^='Show Revision Commit'],
+.editor-actions a[title^='File Annotations'],
+.editor-actions a[title^='Split Editor'],
+.editor-actions a[title^='More Actions']
 {
   display: none !important;
 }
 
 /* 编辑器Group默认模式下 */
 .editor-group-container {
-  opacity: .9;
+  opacity: .8;
 }
 .editor-group-container .tabs-breadcrumbs,
 .editor-group-container .margin-view-overlays,
@@ -32,9 +27,6 @@
   border-bottom: 2px solid transparent;
   font-weight: 600;
 }
-/* .editor-group-container .tab.active .monaco-icon-name-container {
-  font-weight: 600;
-} */
 
 /* 编辑器Group已激活模式下 */
 .editor-group-container.active,
