@@ -23,6 +23,7 @@
     ss  = status -s -b
     df  = diff
     dfn = diff --name-only
+    ck  = checkout
     c   = commit -m
     ca  = commit -am
     aa  = add .
