@@ -119,7 +119,7 @@ alias hosts-config="sudo vim /etc/hosts"
 
 set -o ignoreeof
 
-alias proxy_on='export all_proxy=socks5://127.0.0.1:7890'
+alias proxy_on='export all_proxy=socks5://127.0.0.1:7891'
 alias proxy_off='unset all_proxy'
 
 # npm config set registry https://registry.npm.taobao.org --global

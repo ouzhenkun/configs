@@ -37,3 +37,9 @@
 .editor-group-container.active .tab.active {
   border-bottom: 2px solid;
 }
+
+/* QuickOpen 宽度 */
+.quick-input-widget {
+  width: 800px !important;
+  margin-left: -400px !important;
+}
