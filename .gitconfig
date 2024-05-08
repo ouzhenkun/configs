@@ -41,6 +41,8 @@
 [github]
     user = ouzhenkun
 [http "https://github.com"]
-    proxy = socks5://127.0.0.1:7891
+    # proxy = socks5://127.0.0.1:7891
 [https "https://github.com"]
-    proxy = socks5://127.0.0.1:7891
+    # proxy = socks5://127.0.0.1:7891
+[pull]
+	rebase = false

@@ -68,6 +68,8 @@ export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Ho
 export ANDROID_HOME="/Users/zhenkunou/Library/Android/sdk"
 export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+export PATH=/opt/homebrew/bin:$PATH
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh

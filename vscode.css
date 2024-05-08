@@ -1,12 +1,13 @@
 /* VSCode自定义样式 */
 
 /* 隐藏编辑器右上角的菜单 */
-.editor-actions a[title^='Open Changes'],
-.editor-actions a[title^='Run Code'],
-.editor-actions a[title^='Show Revision Commit'],
-.editor-actions a[title^='File Annotations'],
-.editor-actions a[title^='Split Editor'],
-.editor-actions a[title^='More Actions']
+.editor-actions a[aria-label^='Open Changes'],
+.editor-actions a[aria-label^='Run Code'],
+.editor-actions a[aria-label^='Open In New Vscode Window'],
+.editor-actions a[aria-label^='Show Revision Commit'],
+.editor-actions a[aria-label^='File Annotations'],
+.editor-actions a[aria-label^='Split Editor'],
+.editor-actions a[aria-label^='More Actions']
 {
   display: none !important;
 }
@@ -15,13 +16,13 @@
 .editor-group-container {
   opacity: .8;
 }
-.editor-group-container .tabs-breadcrumbs,
+.editor-group-container .monaco-breadcrumbs,
 .editor-group-container .margin-view-overlays,
-.editor-group-container .tabs-breadcrumbs .shows-symbol-icon.monaco-breadcrumb-item {
+.editor-group-container .monaco-breadcrumbs .shows-symbol-icon.monaco-breadcrumb-item {
   opacity: .5;
 }
-.editor-group-container .tabs-breadcrumbs .file.monaco-breadcrumb-item {
-  font-weight: 500;
+.editor-group-container .monaco-breadcrumbs .file.monaco-breadcrumb-item {
+  font-weight: 600;
 }
 .editor-group-container .tab.active {
   border-bottom: 2px solid transparent;
@@ -30,7 +31,7 @@
 
 /* 编辑器Group已激活模式下 */
 .editor-group-container.active,
-.editor-group-container.active .tabs-breadcrumbs,
+.editor-group-container.active .monaco-breadcrumbs,
 .editor-group-container.active .margin-view-overlays {
   opacity: 1;
 }
